@@ -13,13 +13,13 @@ provider "aws"{
 	region= "ap-south-1a"
 }
 
-resource "aws_instance" "Zoro"{
+resource "aws_instance" "zoro"{
 
 	ami = "ami-0a7cf821b91bcccbc"
 	instance_type = "t2.micro"
 	vpc_security_group_ids = [aws_security_group.zoro.id]
 	key_name = "zoro"
-	availibility_zone = "ap-south-1a"
+	availability_zone = "ap-south-1a"
 	user_data = <<EOF
 #!/bin/bash
 sudo -i
