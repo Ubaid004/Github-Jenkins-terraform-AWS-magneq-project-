@@ -3,7 +3,7 @@ pipeline {
 	stages{
 		stage("checkout"){
 			steps{
-			git "https://github.com/Ubaid004/Jenkins-Terrafrom.git"
+			git url:"https://github.com/Ubaid004/Jenkins-Terrafrom.git", branch:"dev"
 			}
 		}
 		stage(" initialization"){
