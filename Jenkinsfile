@@ -3,7 +3,7 @@ pipeline {
 	stages{
 		stage("checkout"){
 			steps{
-			git url:"https://github.com/Ubaid004/Jenkins-Terrafrom.git", branch:"dev"
+			git url:"https://github.com/Ubaid004/Github-Jenkins-terraform-AWS-magneq-project-.git", branch:"main"
 			}
 		}
 		stage(" initialization"){
